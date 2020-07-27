@@ -1,0 +1,41 @@
+# GitHub 
+'New repository' 에서 저장소 생성
+아래의 세 가지 중 하나 수행 (Git 에서)
+>>create a new repository on the command line
+echo "# YoutubeCrawling" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/GarnetKangSB/YoutubeCrawling.git
+git push -u origin master              
+>>push an existing repository from the command line
+git remote add origin https://github.com/GarnetKangSB/YoutubeCrawling.git
+git push -u origin master
+>>import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+# GitHub - Slack 연동
+원하는 Channel로 이동 후
+/github subscribe (깃허브 링크) 입력
+예 /github subscribe https://github.com/GarnetKangSB/MultiCampus_2020NLP_BOK_3
+깃허브가 팝업되면 권한 허용 후 진행
+위의 명령어 재입력
+Slack에서 'Connect GitHub account' 버튼 클릭
+
+
+
+# Code 작성 순서
+(VS Code)
+'Open Folder' 로 Git을 설정한(git init or git clone) 파일 열기
+코드 작성, 수정 후에 저장을 하면 좌측의 'Source Control' 탭이 변화를 감지(숫자가 팝업됨)
+'체크표시'로 Commit 가능
+master Branch -> Create New Branch : 좌측 하단에 브랜치(예 master) 클릭해서 수행
+Commit : '체크표시', 
+
+(GitHub)
+Pull Request : Commit 후에 Merge하기 전의 임시 상태
+Code Review : GitHub에서 댓글같은 형식으로 다른 동료들이 검토
+Merge : Code Review가 끝난 Code 를 마지막으로 master Branch에 합침
+
